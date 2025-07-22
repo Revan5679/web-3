@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permintaan Maaf Azra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #4a1a2c;
+        }
+        
+        .heart {
+            position: fixed;
+            pointer-events: none;
+            transform: translate(0, 0);
+            animation: float 4s ease-in-out infinite;
+            opacity: 0.7;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+            50% { transform: translateY(-20px) rotate(10deg); opacity: 1; }
+            100% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+        }
+        
+        .card {
+            transform: scale(0.9);
+            opacity: 0;
+            animation: show 0.8s forwards ease-out;
+        }
+        
+        @keyframes show {
+            to { transform: scale(1); opacity: 1; }
+        }
+        
+        .btn-wa {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 4px 15px rgba(18, 140, 126, 0.3);
+        }
+        
+        .btn-wa:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(18, 140, 126, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div id="hearts-container"></div>
+    
+    <div class="card bg-white rounded-2xl shadow-xl overflow-hidden w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto">
+        <div class="relative h-48 overflow-hidden">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/40ec42a6-e540-471b-ac34-9dd46231e808.png" alt="Ilustrasi pasangan romantis di bawah pohon dengan balon hati berwarna merah muda, langit sore dengan gradasi oranye dan pink" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-pink-500/50 to-red-500/30"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">Penyesalan</h1>
+            </div>
+        </div>
+        
+        <div class="p-6 space-y-4">
+            <div class="flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-500 animate-pulse" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            
+            <p class="text-gray-900 text-center">
+                Aku mungkin udah marah ke sampean waktu semalam sama mbak, tetapi ego ku naik kebetulan  aku yo kepengen nesu karo sampean
+            </p>
+            
+            <p class="text-gray-700 text-center font-medium">
+                Aku yo jane ngroso bersalah wes nyeneni sampean, aku minta maap wes nesu karo sampean, aku pengen baikan karo sampean, oleh?
+            </p>
+            
+            <div class="flex justify-center mt-6">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f65948c6-eccc-4f28-abef-98132af8aa82.png" alt="Ilustrasi kartu dengan tulisan 'I'm sorry' dalam bentuk catatan lipat warna pink dengan hiasan bunga kecil di sudutnya" class="rounded-lg border-2 border-pink-200 shadow-sm">
+            </div>
+            
+          <p class="text-gray-1000 text-center font-medium">
+            TEKAN TOMBOL HIJAU
+        </p>  
+           
+        <div class="pt-4">
+    <a href="https://wa.me/6285143102415?text=Iya%20gua%20maafin" class="btn-wa text-white py-3 px-6 rounded-full font-semibold inline-flex items-center justify-center w-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-9.802-9.78c-.328.944-1.871 5.785-1.457 6.87.015.042.028.084.043.124.027.069.055.138.083.206.032.076.062.152.097.226.029.057.061.113.095.168.019.03.04.058.06.087.038.048.077.095.117.142.017.019.035.037.053.054l.03.028c.357.342.752.645 1.178.905.21.129.428.246.653.346l.068.028c.227.091.459.169.695.229l.05.012c.225.055.456.093.692.113.135.012.27.018.405.018h.003c.435 0 .867-.053 1.286-.154.7-.166 1.356-.476 1.929-.921.41-.319.78-.695 1.101-1.115.092-.119.179-.242.262-.368.083-.128.16-.258.234-.39l.119-.219c.015-.03.031-.059.044-.089.095-.194.18-.392.255-.596l.018-.053c.118-.345.207-.7.262-1.064.072-.478.089-.962.049-1.443-.02-.241-.055-.482-.101-.722-.038-.193-.083-.385-.135-.575-.141-.513-.342-1.005-.599-1.465a8.517 8.517 0 00-.314-.514c-.08-.124-.163-.247-.251-.367-.21-.293-.448-.564-.713-.811a9.268 9.268 0 00-.512-.455 5.864 5.864 0 00-1.135-.745c-.314-.161-.644-.29-.986-.39-.34-.1-.69-.17-1.046-.206-.34-.035-.683-.034-1.024.002a4.883 4.883 0 00-1.74.57c-.242.12-.473.262-.693.422-.154.112-.303.23-.446.354-.13.114-.255.233-.375.357l-.043.044c-.122.122-.239.248-.35.38l-.043.053c-.124.154-.239.315-.349.48-.008.01-.013.021-.022.031-.326.473-.593.983-.794 1.52zM12 0a12 12 0 1012 12A12.004 12.004 0 0012 0m0 22a10 10 0 1110-10 10.011 10.011 0 01-10 10"/>
+        </svg>
+        Apakah sampean maafne aku?
+    </a>
+</div>
+        </div>
+    </div>
+    
+    <footer class="mt-8 mb-4 text-center text-white text-sm">
+        <p>Dibuat dengan ❤️ khusus untukmu</p>
+    </footer>
+    
+    <script>
+        // Create floating hearts
+        function createHearts() {
+            const container = document.getElementById('hearts-container');
+            const colors = ['#ff6b6b', '#ff8e8e', '#ffb3b3', '#ffd8d8'];
+            
+            for (let i = 0; i < 12; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '❤️';
+                heart.style.color = colors[Math.floor(Math.random() * colors.length)];
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = Math.random() * 100 + 'vh';
+                heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                heart.style.animationDelay = (Math.random() * 2) + 's';
+                container.appendChild(heart);
+            }
+        }
+        
+        // Initial call
+        createHearts();
+        
+        // Add more hearts periodically
+        setInterval(() => {
+            const hearts = document.querySelectorAll('.heart');
+            if (hearts.length < 30) {
+                createHearts();
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
+
